@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉田 悠人 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero" id="sky-header">
+        <div class="rain-overlay" id="rain-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text-box">
+                <p class="hero-sub">大阪公立大学工業高等専門学校 知能情報コース 2年 (17歳)</p>
+                <h1 class="hero-name">吉田 悠人</h1>
+                <p class="hero-en">Haruto Yoshida</p>
+                <p class="hero-text">
+                    主にAIによるコード生成を活用しつつ、その不完全さを見抜いて修正・最適化するための基盤として、授業で学ぶ基礎理論の定着に取り組んでいます。
+                </p>
+            </div>
+
+            <div class="cloud-zone" id="cloud-zone">
+                <div class="cloud" id="cloud">
+                    <span class="cloud-part p1"></span>
+                    <span class="cloud-part p2"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2>About Me</h2>
+            <div class="profile-meta">
+                <p>所属：大阪公立大学工業高等専門学校 知能情報コース 2年（2025年4月入学・在学中）</p>
+                <p>関心分野：ゲームロジック・ターン制ルールの実装、CUI/WebでのインタラクティブなUI構築</p>
+                <p>連絡先・リンク：<a href="https://github.com/special-waa" target="_blank" rel="noopener">GitHub (special-waa)</a></p>
+            </div>
+            <p>
+                授業や実験を通じて、C言語、Python、ディジタル論理回路、マイコン実習などの計算機基礎を履修しています。
+            </p>
+            <p>
+                近年、生成AIによって初学者でも容易にコードを作成できる環境が整ったことを受け、私自身は0からすべてを自力で記述することのみに固執せず、提示されたコードの論理を読み解き、修正や改善を行うために知識を活用するという方針をとっています。
+            </p>
+            <p>
+                現在の自身の技量は授業の履修範囲にとどまり、突出した実績があるわけではありません。しかし、AIが生成するコードには依然として不完全さや誤りが含まれます。それらを的確に検証し、実用に足る形へ修正するためには、授業で扱われる基本文法やハードウェアの仕組みを確実に理解しておくことが不可欠であると考え、日々の学習に向き合っています。
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Skills & Tools</h2>
+            <p class="section-desc">※学校のカリキュラム内で手順に沿って操作・履修したツールの記録です。</p>
+
+            <div class="skill-group">
+                <h3>プログラミング言語</h3>
+                <ul class="skill-list">
+                    <li>Python：文法基礎の履修。Google Colab 上での演習コードの実行および課題作成。</li>
+                    <li>Arduino言語：実験実習でのマイコンボード制御。サンプルの書き込み、センサ入力やLED等の動作確認。</li>
+                    <li>Scratch：ブロックプログラミングを通じた、条件分岐やループ処理などの論理構造の学習。</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h3>ソフトウェア・実習環境</h3>
+                <ul class="skill-list">
+                    <li>Git / GitHub：コミット・プッシュ操作、および GitHub Pages によるWebサイト公開。</li>
+                    <li>VSCode：授業でのコード閲覧・簡易編集環境。</li>
+                    <li>Arduino IDE：スケッチ書き込み、シリアルモニタでの動作確認。</li>
+                    <li>Deeds-DCS：ディジタル論理回路の設計とシミュレーション。</li>
+                    <li>Tinkercad：ブラウザ上での仮想回路ツールの操作演習。</li>
+                    <li>MakeCode for micro:bit：ブロック配置による簡易ハードウェア制御。</li>
+                    <li>WSL (Linux)：基本的なBashコマンドでのファイル操作。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Works & Projects</h2>
+
+            <div class="work-item">
+                <h3>課題04：ポーカーリンクバトル (Python)</h3>
+                <div class="work-meta">
+                    リンク：<a href="https://colab.research.google.com/drive/1_G5qi7CtccLfDCco22tAvWkQ0zX7badP?usp=sharing" target="_blank" rel="noopener">Google Colaboratory で開く</a>
+                </div>
+                <p>
+                    プログラミング1の自由課題として制作した対戦型のターン制CUIゲームです。配られた手札から役を成立させて敵と戦います。スートごとの固有効果（スペードは攻撃、ハートは回復、クラブはガード、ダイヤはバフ蓄積）や、雑魚敵からボス敵への連戦システム、および例外処理による入力エラー対策を実装しました。
+                </p>
+
+                <div class="slider-box">
+                    <div class="slider-screen">
+                        <img id="slide-img" src="hw04_img1.png" alt="課題04 実行画面" onerror="this.style.display='none'; document.getElementById('slide-fallback').style.display='flex'">
+                        <div id="slide-fallback" class="slide-fallback" style="display:none;">hw04_img1.png を配置してください</div>
+                    </div>
+                    <div class="slider-nav">
+                        <button type="button" id="prev-btn" class="nav-arrow">◀</button>
+                        <div class="nav-dots">
+                            <span class="dot active">●</span>
+                            <span class="dot">○</span>
+                            <span class="dot">○</span>
+                            <span class="dot">○</span>
+                        </div>
+                        <button type="button" id="next-btn" class="nav-arrow">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="work-divider">
+
+            <div class="work-item">
+                <h3>高専祭展示プロジェクト (2I 学科展示)</h3>
+                <div class="work-meta">
+                    担当・区分：プロジェクトメンバー
+                </div>
+                <p>
+                    知能情報コース2年の高専祭における学科展示企画です。ハッカソン参加メンバーによる制作ソフトウェアの出展および実機デモ展示を行いました。プロジェクトメンバーとして参加しました。
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="meadow-zone">
+        <div class="meadow-rain" id="meadow-rain"></div>
+        <div class="meadow-ground"></div>
+        <div class="meadow-plants" id="plant-box"></div>
+        <div class="building-zone" id="building-zone"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Haruto Yoshida. 大阪公立大学高専 知能情報コース.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
